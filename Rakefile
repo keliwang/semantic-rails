@@ -32,6 +32,8 @@ task :create_release => [:init_tmp_dir, :download_semantic] do
   ASSETS_DIR_LIST.each do |dir|
     sh %{cp -r tmp/#{dir} .}
   end
+  sh %{sed -i 's#\.\./fonts#./semantic-rails/fonts#g' semantic.min.css}
+  sh %{sed -i 's#\.\./images#./semantic-rails/images#g' semantic.min.css}
 end
 
 desc "Clean up"
