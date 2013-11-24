@@ -1,4 +1,4 @@
-# Semantic-UI Compressed Version For Rails
+# Semantic-UI For Rails
 
 This is a bower package that can make semantic-ui works better with Rails
 application.
